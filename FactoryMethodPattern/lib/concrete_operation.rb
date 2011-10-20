@@ -18,7 +18,7 @@ end
 
 class DivOperation < Operation
   def validate(args)
-    raise(ZeroDivisionError, "Should not divide by zero") if args.include?(0)
+    raise(ZeroDivisionError, "Should not divide by zero") if args[1..-1].include?(0)
   end
   
   def calculate
