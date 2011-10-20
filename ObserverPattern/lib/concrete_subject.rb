@@ -9,10 +9,6 @@ class Folk
     @addr = addr
   end
   
-  def notify
-    super
-  end
-  
   def move_in(new_addr)
     @addr = new_addr
     notification = []
